@@ -1,0 +1,9 @@
+var N;
+do{
+N = prompt("Ingrese numero N: ");
+}while (N<2);
+for (var i=2;i<=N;i++){
+if (i%2==0){
+console.log(i);
+}
+}

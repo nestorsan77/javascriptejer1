@@ -1,0 +1,6 @@
+let anio, N ,j,suma;
+         anio =prompt("introduce la base del triangulo : ");
+if ((anio % 4 == 0 && anio % 100 != 0) || (anio % 100 == 0 && anio % 400 == 0))
+{console.log("el numero es bisiesto")}
+else
+{console.log("el numero no es bisiesto")}

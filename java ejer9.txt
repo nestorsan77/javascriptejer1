@@ -1,0 +1,22 @@
+let apuesta = 20,numero,dineroapostado;
+do{
+do{
+numero = prompt("Escribe un numero entre el 1 y el 6")
+}while (numero<1 || numero>6);
+do{
+dineroapostado = prompt("cantidad a apostar tienes: "+apuesta)
+}while (numero<1 || dineroapostado>apuesta);
+let maquina = parseInt (Math.random(0)*(6-0)+0);
+console.log(maquina);
+if (numero==maquina)
+{console.log("has ganado la apuesta")
+apuesta = parseInt(apuesta*2);
+}else
+{console.log("has perdido la apuesta")
+apuesta = parseInt(apuesta-dineroapostado);
+}
+}while(apuesta<=150 && apuesta>=0)
+if (apuesta>150)
+{console.log("has ganado")}
+else
+{console.log("has perdido")}

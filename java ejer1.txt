@@ -1,0 +1,17 @@
+var variable1,variable2,variable3;
+let nombreDeLaVariable = variable1;
+variable1 = prompt("Ingrese numero 1: ")
+variable2 = prompt("Ingrese numero 2: ")
+variable3 = prompt("Ingrese numero 3: ")
+ if (variable1 > 10 || variable2 > 10 || variable3>10) 
+ {
+ console.log("Existe algun número mayor a 10"); }else
+ 
+ {console.log("Ningún número es mayor que 10"); }
+console.log(variable1);
+console.log(variable2);
+console.log(variable3);
+var suma = parseInt(variable1)+parseInt(variable2)+parseInt(variable3);
+            alert("La suma es: "+suma)
+        
+console.log(suma);

@@ -1,0 +1,18 @@
+let n, i;
+        do {
+            n =prompt("Introduce un numero mayor o igual 1 y menor o igual a 10000: ");
+        } while (n < 1 || n>10000);
+        if (n == 1) {
+            console.log("No es primo");
+        } else {
+            i = 2;
+            while (n % i != 0) {
+                i++;
+            }
+            if (i == n) { 
+                console.log("Primo");  
+            } else {
+                console.log("No es primo");
+            }
+        }
+    

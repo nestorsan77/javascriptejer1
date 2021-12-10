@@ -1,0 +1,6 @@
+let base, altura,j,suma;
+         base =prompt("introduce la base del triangulo : ");
+
+         altura =prompt("introduce la altura del triangulo : ");
+suma = parseFloat(base*altura);
+console.log(suma);

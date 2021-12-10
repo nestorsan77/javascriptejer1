@@ -1,0 +1,11 @@
+var sueldo,años;
+sueldo = prompt("Ingrese sueldo: ");
+años = prompt("Ingrese años: ");
+if (sueldo<1600)
+{if (años>=10){
+sueldo = parseInt(sueldo*2);
+}else
+{sueldo = parseFloat(sueldo*1.5);}}
+else
+{sueldo = sueldo;}
+console.log(sueldo);

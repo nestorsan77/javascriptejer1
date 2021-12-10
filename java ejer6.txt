@@ -1,0 +1,19 @@
+let n, i,j,suma;
+         n =prompt("introduce un operador : ");
+
+         i =prompt("introduce un numero : ");
+
+         j =prompt("introduce otro numero : ");
+         
+         
+		if (n==='+')
+	{suma = parseInt(i+j)}
+		else if (n==='-')
+	{suma = parseInt(i-j)}
+		else if (n==='*')
+	{suma = parseInt(i*j)}
+		else if (n==='/')
+	{suma = parseInt(i/j)}
+
+console.log(suma);
+
