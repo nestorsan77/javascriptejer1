@@ -1,0 +1,22 @@
+var calcular = ['1','123','500','115','44','88']
+var suma = 0;
+var media = 0;
+var mayor =0;
+var menor = 10000;
+let i = 0;
+for (i=0; i!=calcular.length;i++){
+if (parseInt(calcular[i])>=parseInt(mayor)){
+ parseInt(mayor = calcular[i])
+}
+if (parseInt(calcular[i])<=parseInt(menor)){
+parseInt(menor = calcular[i])
+}
+suma = parseInt(suma) + parseInt(calcular[i])
+
+}
+media = parseInt(suma)/parseInt(i)
+
+console.log("suma es = "+suma)
+console.log("media es = "+media)
+console.log("menor es = "+menor)
+console.log("mayor es = "+mayor)

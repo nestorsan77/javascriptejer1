@@ -1,0 +1,7 @@
+console.log("Ejer2");
+var x = prompt("introduce Apellidos: email: y codigo postal");
+let array = x.split(':');
+let array2 = array[1].split('@');
+console.log(array[0]);
+console.log(array[2]);
+console.log(array2[1]);

@@ -1,0 +1,14 @@
+let X,Y,suma;
+do{
+X = prompt("Escribe un valor X valido");
+}while (X<-50 || X>50);
+do{
+Y = prompt("Escribe un valor Y valido");
+}while (Y<1 || Y>20);
+    Y = parseInt(Y);
+    X = parseInt(X);
+for(var i = 1; i<=Y ;i++){
+suma =X*i;
+console.log(X+" * "+i+" = "+suma);
+}
+

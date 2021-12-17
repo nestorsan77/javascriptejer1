@@ -1,0 +1,8 @@
+var cadenas = ['Buenos días','hola','estoy en clase de entornos de desarrollo','UD3','ejercicios','javascript','objetos predefinidos y funciones'];
+setInterval(MuestraCadenas, 2000);
+function MuestraCadenas() {
+for (let i=0;i!=cadenas.length;i++)
+ {
+ console.log(cadenas[i]);
+ }
+}
