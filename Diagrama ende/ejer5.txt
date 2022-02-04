@@ -1,0 +1,104 @@
+class Vivienda{
+constructor (id,area,numHabitaciones,direccion,precio){
+this.id = id;
+this.area = area;
+this.numHabitaciones = numHabitaciones;
+this.direccion = direccion;
+this.precio = precio;
+}
+getnumHabitaciones(){
+return this.numHabitaciones;
+}
+setnumHabitaciones(numHabitaciones){
+this.numHabitaciones = numHabitaciones;
+}
+getid(){
+return this.id;
+}
+setid(id){
+this.id = id;
+}
+getarea(){
+return this.area;
+}
+setarea(area){
+this.area = area;
+}
+getdireccion(){
+return this.direccion;
+}
+setdireccion(direccion){
+this.direccion = direccion;
+}
+getprecio(){
+return this.precio;
+}
+setprecio(precio){
+this.precio = precio;
+}
+mostrarVivienda(){
+console.log("Numero vivienda"+this.id+"area de la vivienda"+this.area+"Direccion de la vivienda"+this.area+"precio de la vivienda"+this.precio+"numero de habitaciones"+this.numHabitaciones)
+}
+}
+class Inmoviliaria{
+constructor (id,area,numHabitaciones,direccion,precio){
+this.id = id;
+this.numHabitaciones = numHabitaciones;
+this.area = area;
+this.direccion = direccion;
+this.precio = precio;
+}
+getnumHabitaciones(){
+return this.numHabitaciones;
+}
+setnumHabitaciones(numHabitaciones){
+this.numHabitaciones = numHabitaciones;
+}
+getid(){
+return this.id;
+}
+setid(id){
+this.id = id;
+}
+getarea(){
+return this.area;
+}
+setarea(area){
+this.area = area;
+}
+getdireccion(){
+return this.direccion;
+}
+setdireccion(direccion){
+this.direccion = direccion;
+}
+getprecio(){
+return this.precio;
+}
+setprecio(precio){
+this.precio = precio;
+}
+modificarviviendas(nuevavivienda){
+for (let i=0;i<viviendas.length;i++){
+if(this.vivienda[i].getid()===nuevavivienda.getid()){
+this.vivienda[i]=nuevavivienda
+}
+}
+}
+
+
+mostrarVivienda(){
+console.log("Numero vivienda"+this.id+"area de la vivienda"+this.area+"Direccion de la vivienda"+this.area+"precio de la vivienda"+this.precio+"numero de habitaciones"+this.numHabitaciones)
+
+}
+}
+let vivienda=new Array(3);
+vivienda[0]=new Vivienda(12345,'12385','4','C//San Gallardo, 2','5');
+vivienda[1]=new Vivienda(1245,'22385','5','C//San Anton Mas, 3','8');
+vivienda[2]=new Vivienda(1245,'32395','6','C//San Pascual, 5','8');
+
+let viviendas=new Array(3);
+viviendas[0]=new Inmoviliaria(12345,'12385','4','C//San Gallardo, 2','5');
+viviendas[1]=new Inmoviliaria(1245,'32395','6','C//San Pascual, 5','8');
+viviendas[2]=new Inmoviliaria(1245,'32395','6','C//San Pascual, 5','8');
+
